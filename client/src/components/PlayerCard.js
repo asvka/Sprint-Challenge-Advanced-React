@@ -20,13 +20,14 @@ class PlayerCard extends React.Component {
     render(){
         console.log(this.state.data)
         return (
-            <div className='player-container'>
-            <h4 className='player-header'>Athletes: </h4>
+            <div>
+            <h1>Women's World Cup Athletes </h1>
+            <h5>Women's World Cup players ranked by search interest from Google Trends, June-July 2019, worldwide</h5>
             <div className='card-deck'>
                 {this.state.data.map(data => (
                     <Card>
                         <CardBody>
-                            <CardTitle>Name: {data.name}</CardTitle>
+                            <CardTitle><h2>{data.name}</h2></CardTitle>
                             <CardText>Country: {data.country}</CardText>
                             <CardSubtitle>Searches: {data.searches}</CardSubtitle>
                         </CardBody>
