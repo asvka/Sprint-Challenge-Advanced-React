@@ -19,7 +19,7 @@ class Players extends React.Component {
     render (){
         console.log('Players data: ', this.state.players);
         return(
-            <div>
+            <div className="player-card-container">
                 <PlayerCard
                 key={this.state.id}
                 id={this.state.id}
