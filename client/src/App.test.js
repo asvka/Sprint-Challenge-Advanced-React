@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import render from '@testing-library/react';
+import { fireEvent } from '@testing-library/react';
 import App from './App';
 import DarkMode from './components/DarkMode';
 import Players from './components/Players';
@@ -22,4 +22,3 @@ test('Players renders without crashing', () => {
   ReactDOM.render(<Players />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
-
