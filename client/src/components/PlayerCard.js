@@ -25,9 +25,11 @@ class PlayerCard extends React.Component {
             <div className='card-deck'>
                 {this.state.data.map(data => (
                     <Card>
-                    <CardTitle>Name: {data.name}</CardTitle>
-                    <CardText>Country: {data.country}</CardText>
-                    <CardText>Searches: {data.searches}</CardText>
+                        <CardBody>
+                            <CardTitle>Name: {data.name}</CardTitle>
+                            <CardText>Country: {data.country}</CardText>
+                            <CardSubtitle>Searches: {data.searches}</CardSubtitle>
+                        </CardBody>
                     </Card>
                  ))}
             </div>
